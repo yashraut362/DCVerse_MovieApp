@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
 
 class Favourites extends Component {
-
     render() {
         return (
             <div>

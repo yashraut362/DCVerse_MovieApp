@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 class Home extends Component {
+    state = {}
     render() {
         return (
             <div>

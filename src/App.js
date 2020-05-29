@@ -1,26 +1,38 @@
-import React from 'react';
+import React, { Component } from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
 import { BrowserRouter, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Favourites from './pages/Favourites';
-import Movierequest from './pages/Movierequest';
-import SignIn from './components/auth/SignIn';
-import SignUp from './components/auth/SignUp';
+import HomeRedirector from './pages/HomeRedirector';
+import SignIn from './components/auth/AuthPage';
+import fire from './config/fbConfig';
 
 
+class App extends Component {
+  state = {
+    user: {},
+  }
+  componentDidMount() {
+    this.authListener();
+  }
 
-function App() {
-  return (
-    <BrowserRouter>
-      <div className="App">
-        <Route exact path="/" component={Home} />
-        <Route path="/Favourites" component={Favourites} />
-        <Route path="/Movierequest" component={Movierequest} />
-        <Route path="/Signin" component={SignIn} />
-        <Route path="/SignUp" component={SignUp} />
-      </div>
-    </BrowserRouter>
-  );
+  authListener() {
+    fire.auth().onAuthStateChanged((user) => {
+      if (user) {
+        this.setState({ user });
+      } else {
+        this.setState({ user: null });
+      }
+    })
+  }
+
+  render() {
+    return (
+      <BrowserRouter>
+        <div className="App">
+          {this.state.user ? (<HomeRedirector />) : (<SignIn />)}
+        </div>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;

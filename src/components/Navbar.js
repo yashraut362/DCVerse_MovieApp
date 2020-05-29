@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import M from 'materialize-css'
 import 'materialize-css/dist/css/materialize.min.css'
+import fire from '../config/fbConfig';
 
 class Navbar extends Component {
     componentDidMount() {
@@ -21,6 +22,7 @@ class Navbar extends Component {
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/Favourites">Favourites</Link></li>
                             <li><Link to="/Movierequest">Request Movies</Link></li>
+                            <li><button onClick={() => fire.auth().signOut()} class="btn-floating red darken-3 pulse"></button></li>
 
                             {/* <li><Link to="/Donation">Donation</Link></li> */}
                         </ul>

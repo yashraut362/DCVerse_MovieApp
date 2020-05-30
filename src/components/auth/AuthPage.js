@@ -28,7 +28,7 @@ class SignIn extends Component {
         return (
             <div className="container center">
                 <form className="transparent">
-                    <h5 className="grey-text text-darken-3">SignIn</h5>
+                    <h5 className="grey-text text-darken-3">Welcome To DCverse~</h5>
                     <div className="input-field">
                         <label htmlFor="email">Email</label>
                         <input type="email" id="email" onChange={this.handleChange} />

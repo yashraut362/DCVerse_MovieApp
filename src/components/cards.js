@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { HomeContext } from '../contexts/HomeContext';
+import { Link } from 'react-router-dom';
 
 
 const Cards = () => {
@@ -19,7 +20,7 @@ const Cards = () => {
                             <div class="card-title">{movie.title}</div>
                         </div>
                         <div class="card-action">
-                            <a href="">Watch</a>
+                            <Link to="/Play"><span>Watch</span></Link>
                             <a href={movie.link}>Download</a>
                         </div>
                     </div>

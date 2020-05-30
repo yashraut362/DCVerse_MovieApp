@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import fire from '../config/fbConfig';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 class Movierequest extends Component {
-
-
     state = {
         moviename: ''
     }
@@ -27,13 +27,26 @@ class Movierequest extends Component {
         this.setState({
             moviename: ''
         })
+        this.notify()
     }
+
+    notify = () => toast('👨‍💻 Request Has been Sended sucessfully!', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+    });
+
     render() {
+
         return (
             <div>
                 <Navbar />
                 <div className="row">
-                    <div className="col s12 l6">
+                    <div className="col s12 l6 offset-l3">
                         <form className="transparent" onSubmit={this.handlesubmit}>
                             <h5>Submit Request for Movie Here</h5>
                             <div className="input-field">
@@ -43,13 +56,12 @@ class Movierequest extends Component {
                             <div className="row">
                                 <div className="col s12 l6">
                                     <button className="btn pink">Submit</button>
+                                    <ToastContainer />
                                 </div>
                             </div>
                         </form>
                     </div>
-                    <div className="col s12 l6">
-                        <h4>Toast here</h4>
-                    </div>
+
                 </div>
                 <Footer />
             </div>

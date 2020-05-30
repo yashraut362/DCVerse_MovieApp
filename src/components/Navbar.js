@@ -7,7 +7,6 @@ import fire from '../config/fbConfig';
 class Navbar extends Component {
     componentDidMount() {
         M.Sidenav.init(this.Sidenav);
-        let instance = M.Sidenav.getInstance(this.Sidenav);
     }
     render() {
         return (

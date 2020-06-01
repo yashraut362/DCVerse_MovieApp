@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect } from 'react';
-import fire from '../config/fbConfig'
+import firebase from '../config/fbConfig'
 
 export const HomeContext = createContext();
 
@@ -7,7 +7,7 @@ const HomeContextProvider = (props) => {
     const [movies, setmovies] = useState([]);
 
     useEffect(() => {
-        fire.firestore()
+        firebase.firestore()
             .collection('movies')
             .onSnapshot((snapshot) => {
                 const Newmovies = snapshot.docs.map((doc) => ({

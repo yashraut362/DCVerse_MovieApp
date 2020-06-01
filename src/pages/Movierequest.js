@@ -5,7 +5,6 @@ import fire from '../config/fbConfig';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-
 class Movierequest extends Component {
     state = {
         moviename: ''
@@ -61,7 +60,6 @@ class Movierequest extends Component {
                             </div>
                         </form>
                     </div>
-
                 </div>
                 <Footer />
             </div>

@@ -1,16 +1,22 @@
-import React from 'react';
+// import React from 'react';
 
-export const VideoContext = createContext();
+// export const PlayerinfoContext = createContext();
 
-const VideoContextProvider = (props) => {
-    const [videos, setvideos] = useState([
+// const PlayerinfoContextProvider = (props) => {
+//     const [videos, setvideos] = useState([{ id: null }]);
 
-    ]);
-    return (
-        <VideoContextProvider value={{ videos }}>
-            {props.children}
-        </VideoContextProvider>
-    );
-}
+//     useEffect(() => {
+//         let id = this.props.match.params.Play_id;
+//         setvideos({ id: id })
+//     }, [])
 
-export default VideoContextProvider;
+//     return (<div>
+//         <PlayerinfoContextProvider value={{ videos }}>
+//             {props.children}
+//         </PlayerinfoContextProvider>
+//         <h1>{videos.id}</h1>
+//     </div>
+//     );
+// }
+
+// export default PlayerinfoContextProvider;

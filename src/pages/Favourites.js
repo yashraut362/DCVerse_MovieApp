@@ -5,10 +5,12 @@ import Footer from '../components/Footer';
 class Favourites extends Component {
     render() {
         return (
+
             <div>
                 <Navbar />
                 <Footer />
             </div>
+
         );
     }
 }

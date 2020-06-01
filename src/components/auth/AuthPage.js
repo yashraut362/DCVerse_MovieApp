@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import fire from '../../config/fbConfig';
+import firebase from '../../config/fbConfig';
 
 class SignIn extends Component {
     state = {
@@ -13,14 +13,14 @@ class SignIn extends Component {
     }
     handleLogin = (e) => {
         e.preventDefault();
-        fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password).catch((error) => {
+        firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password).catch((error) => {
             console.log(error);
         })
 
     }
     handleSignUp = (e) => {
         e.preventDefault();
-        fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).catch((error) => {
+        firebase.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).catch((error) => {
             console.log(error);
         });
     }

@@ -39,8 +39,6 @@ class Navbar extends Component {
                     <li><Link class="sidenav-close" to="/">Home</Link></li>
                     <li><Link class="sidenav-close" to="/Favourites">Favourites</Link></li>
                     <li><Link class="sidenav-close" to="/Movierequest">Request Movies</Link></li>
-
-                    {/* <li><a class="sidenav-close" href="/Donation">Donation</a></li> */}
                 </ul>
             </div>
         )

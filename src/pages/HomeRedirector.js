@@ -13,7 +13,7 @@ class HomeRedirector extends Component {
                     <Route exact path="/" component={Home} />
                     <Route path="/Favourites" component={Favourites} />
                     <Route path="/Movierequest" component={Movierequest} />
-                    <Route path="/Play" component={MoviePlayer} />
+                    <Route path="/movie/:Play_id" component={MoviePlayer} />
                 </BrowserRouter>
             </div>
         );

@@ -12,7 +12,7 @@ const Cards = () => {
                     <div class="card" key={movie.id}>
                         <div class="card-image">
                             <img src={movie.img} alt="" />
-                            <a href="" class="halfway-fab btn-floating pink pulse">
+                            <a href="#" class="halfway-fab btn-floating pink pulse">
                                 <i class="material-icons">favorite</i>
                             </a>
                         </div>
@@ -20,7 +20,7 @@ const Cards = () => {
                             <div class="card-title">{movie.title}</div>
                         </div>
                         <div class="card-action">
-                            <Link to="/Play"><span>Watch</span></Link>
+                            <Link to={'/movie/' + movie.id}><span>Watch</span></Link>
                             <a href={movie.link}>Download</a>
                         </div>
                     </div>

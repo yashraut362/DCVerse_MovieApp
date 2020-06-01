@@ -14,4 +14,10 @@ var firebaseConfig = {
 // Initialize Firebase
 const fire = firebase.initializeApp(firebaseConfig);
 
-export default fire;
+export const auth = firebase.auth()
+export const db = firebase.firestore()
+
+export default firebase;
+
+
+// https://firestore.googleapis.com/v1/projects/dcverse-c639f/databases/(default)/documents/movies/title

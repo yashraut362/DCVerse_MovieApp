@@ -14,7 +14,7 @@ class Navbar extends Component {
                 <nav class="nav-wrapper grey darken-4">
                     <div class="container">
                         <a href="#" class="brand-logo white-text"><i className=" large material-icons">bubble_chart</i>DCverse</a>
-                        <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                        <a class="sidenav-trigger" data-target="mobile-links">
                             <i class="material-icons">menu</i>
                         </a>
                         <ul class="right hide-on-med-and-down">

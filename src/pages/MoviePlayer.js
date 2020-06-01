@@ -1,11 +1,10 @@
-import React, { Component, createContext } from 'react';
+import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import 'video-react/dist/video-react.css';
 import axios from 'axios';
 import { Player } from 'video-react';
 import 'video-react/dist/video-react.css'
-
 
 
 class MoviePlayer extends Component {
@@ -19,7 +18,6 @@ class MoviePlayer extends Component {
                 this.setState({
                     post: res.data
                 })
-                console.log(res)
             })
     }
     //  <h4 className="center">{this.state.post.fields.title.stringValue}</h4>
@@ -44,10 +42,9 @@ class MoviePlayer extends Component {
                             <div class="card">
                                 <div class="card-image">
                                     <img src={this.state.post.fields.img.stringValue} alt="poster" />
-
                                 </div>
                                 <div class="card-content">
-                                    <div class="card-title">{this.state.post.fields.title.stringValue}</div>
+                                    <b><div class="card-title">{this.state.post.fields.title.stringValue}</div></b>
                                 </div>
                             </div>
                         </div>

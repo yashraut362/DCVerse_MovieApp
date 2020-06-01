@@ -17,16 +17,16 @@ class Footer extends Component {
                             <ul>
 
                                 <li>
-                                    <a href="https://github.com/yashraut362/" target="_blank" class="grey-text text-lighten-3"><i class="fab fa-github"></i> Github</a>
+                                    <a href="https://github.com/yashraut362/" class="grey-text text-lighten-3"><i class="fab fa-github"></i> Github</a>
                                 </li>
                                 <li>
-                                    <a href="https://www.instagram.com/_.yashraut._/" target="_blank" class="grey-text text-lighten-3"><i class="fab fa-instagram"></i> Instagram</a>
+                                    <a href="https://www.instagram.com/_.yashraut._/" class="grey-text text-lighten-3"><i class="fab fa-instagram"></i> Instagram</a>
                                 </li>
                                 <li>
-                                    <a href="https://www.facebook.com/yash.raut.1000" target="_blank" class="grey-text text-lighten-3"><i class="fab fa-facebook"></i> Facebook</a>
+                                    <a href="https://www.facebook.com/yash.raut.1000" class="grey-text text-lighten-3"><i class="fab fa-facebook"></i> Facebook</a>
                                 </li>
                                 <li>
-                                    <a href="https://www.linkedin.com/in/yash-raut-55330715a/" target="_blank" class="grey-text text-lighten-3"><i class="fab fa-linkedin"></i> Linked-In</a>
+                                    <a href="https://www.linkedin.com/in/yash-raut-55330715a/" class="grey-text text-lighten-3"><i class="fab fa-linkedin"></i> Linked-In</a>
                                 </li>
                             </ul>
                         </div>

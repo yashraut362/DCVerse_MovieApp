@@ -20,7 +20,7 @@ class Movierequest extends Component {
         db.settings({
             timestampsInSnapshots: true
         });
-        const userRef = db.collection("movierequests").add({
+         db.collection("movierequests").add({
             moviename: this.state.moviename
         });
         this.setState({

@@ -6,7 +6,6 @@ import axios from 'axios';
 import { Player } from 'video-react';
 import 'video-react/dist/video-react.css'
 
-
 class MoviePlayer extends Component {
     state = {
         post: null
@@ -37,20 +36,22 @@ class MoviePlayer extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col s12 l6">
-                        <div className="col s12 l6">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src={this.state.post.fields.img.stringValue} alt="poster" />
-                                </div>
+                    <div className="col s12 l11">
+                        <div class="card horizontal">
+                            <div class="card-image">
+                                <img src={this.state.post.fields.img.stringValue} alt="poster"/>
+                            </div>
+                            <div class="card-stacked">
                                 <div class="card-content">
-                                    <b><div class="card-title">{this.state.post.fields.title.stringValue}</div></b>
+                                    <h4>{this.state.post.fields.title.stringValue}</h4>
+                                    <p>{this.state.post.fields.desc.stringValue}</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href={this.state.post.fields.link.stringValue}>Download</a>
                                 </div>
                             </div>
                         </div>
-                        <div className="col s12 l3">
 
-                        </div>
                     </div>
                 </div>
             </div>

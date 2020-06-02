@@ -13,7 +13,7 @@ class Navbar extends Component {
             <div>
                 <nav class="nav-wrapper grey darken-4">
                     <div class="container">
-                        <a href="#" class="brand-logo white-text"><i className=" large material-icons">bubble_chart</i>DCverse</a>
+                        <a  class="brand-logo white-text"><i className=" large material-icons">bubble_chart</i>DCverse</a>
                         <a class="sidenav-trigger" data-target="mobile-links">
                             <i class="material-icons">menu</i>
                         </a>
@@ -23,7 +23,6 @@ class Navbar extends Component {
                             <li><Link to="/Movierequest">Request Movies</Link></li>
                             <li><button onClick={() => fire.auth().signOut()} class="btn-floating red darken-3 pulse"></button></li>
 
-                            {/* <li><Link to="/Donation">Donation</Link></li> */}
                         </ul>
                     </div>
                 </nav>

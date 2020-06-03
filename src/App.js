@@ -28,9 +28,7 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="App">
-          {this.state.user ? (<HomeRedirector />) : (<SignIn />)}
-        </div>
+        {this.state.user ? (<HomeRedirector />) : (<SignIn />)}
       </BrowserRouter>
     );
   }

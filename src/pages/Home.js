@@ -8,9 +8,9 @@ class Home extends Component {
     state = {}
     render() {
         return (
-            <div className="grey darken-4">
+            <div className="grey darken-4 ">
                 <Navbar />
-                <div className="container">
+                <div className="container home">
                     <div className="row">
                         <HomeContextProvider>
                             <Cards />

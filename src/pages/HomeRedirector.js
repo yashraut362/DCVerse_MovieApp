@@ -8,14 +8,14 @@ import MoviePlayer from './MoviePlayer';
 class HomeRedirector extends Component {
     render() {
         return (
-            <div>
+           
                 <BrowserRouter>
                     <Route exact path="/" component={Home} />
                     <Route path="/Favourites" component={Favourites} />
                     <Route path="/Movierequest" component={Movierequest} />
                     <Route path="/movie/:Play_id" component={MoviePlayer} />
                 </BrowserRouter>
-            </div>
+           
         );
     }
 }

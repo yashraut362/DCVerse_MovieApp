@@ -20,7 +20,7 @@ class Movierequest extends Component {
         db.settings({
             timestampsInSnapshots: true
         });
-         db.collection("movierequests").add({
+        db.collection("movierequests").add({
             moviename: this.state.moviename
         });
         this.setState({
@@ -40,21 +40,20 @@ class Movierequest extends Component {
     });
 
     render() {
-
         return (
-            <div>
+            <div class="grey darken-4 movie-req">
                 <Navbar />
                 <div className="row">
                     <div className="col s12 l6 offset-l3">
-                        <form className="transparent" onSubmit={this.handlesubmit}>
-                            <h5>Submit Request for Movie Here</h5>
+                        <form onSubmit={this.handlesubmit}>
+                            <h5 className="amber-text">Submit Request for Movie Here</h5>
                             <div className="input-field">
-                                <label htmlFor="moviename">MovieName</label>
-                                <input type="text" id="moviename" required onChange={this.handleChange} value={this.state.moviename} />
+                                <label htmlFor="moviename" className="amber-text">MovieName</label>
+                                <input type="text" id="moviename" class="black-text" required onChange={this.handleChange} value={this.state.moviename} />
                             </div>
                             <div className="row">
                                 <div className="col s12 l6">
-                                    <button className="btn pink">Submit</button>
+                                    <button className="btn amber darken-3">Submit</button>
                                     <ToastContainer />
                                 </div>
                             </div>

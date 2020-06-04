@@ -24,7 +24,7 @@ class MoviePlayer extends Component {
         const post = this.state.post ? (
             <div className="post container">
                 <div className="row">
-                    <div className="col s12 l6">
+                    <div className="col s12 l6 hide-on-med-and-down">
                         <Player
                             playsInline
                             poster="/assets/poster.png"
@@ -34,12 +34,19 @@ class MoviePlayer extends Component {
                             height={432}
                         />
                     </div>
+                    <div className="col s12 l6 hide-on-large-only">
+                        <Player
+                            playsInline
+                            poster="/assets/poster.png"
+                            src={this.state.post.fields.link.stringValue}
+                        />
+                    </div>
                 </div>
                 <div className="row">
                     <div className="col s12 l11">
                         <div class="card horizontal">
                             <div class="card-image">
-                                <img src={this.state.post.fields.img.stringValue} alt="poster"/>
+                                <img src={this.state.post.fields.img.stringValue} alt="poster" />
                             </div>
                             <div class="card-stacked">
                                 <div class="card-content">
@@ -58,7 +65,7 @@ class MoviePlayer extends Component {
         ) : (null)
 
         return (
-            <div className="grey darken-2">
+            <div className="grey darken-4">
                 <Navbar />
                 {post}
                 <Footer />

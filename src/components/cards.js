@@ -33,7 +33,7 @@ const Cards = () => {
                         <div class="card" key={movie.id}>
                             <div class="card-image">
                                 <img src={movie.img} alt="poster" />
-                                <a href="#" class="halfway-fab btn-floating pink pulse">
+                                <a href="#" class="halfway-fab btn-floating  amber darken-3 pulse">
                                     <i class="material-icons">favorite</i>
                                 </a>
                             </div>

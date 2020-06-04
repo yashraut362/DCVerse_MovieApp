@@ -7,10 +7,10 @@ const Cards = () => {
     return (
         <div>  {movies.map(movie => {
             return (
-                <div className="col s12 l3 offset-l1">
+                <div className="col s12 l3 offset-s5">
                     <div class="card" key={movie.id}>
                         <div class="card-image">
-                            <img src={movie.img} alt="" />
+                            <img src={movie.img} alt="poster" />
                             <a href="#" class="halfway-fab btn-floating pink pulse">
                                 <i class="material-icons">favorite</i>
                             </a>

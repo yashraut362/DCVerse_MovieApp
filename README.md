@@ -1,3 +1,22 @@
+# MovieApp React
+Movie Streaming app made with React, MaterializeCss , Firebase !
+
+# Screenshot
+## Homepage
+![Capture](https://user-images.githubusercontent.com/37141368/84060810-7474d580-a9da-11ea-813b-670034a81692.PNG)
+
+## Link
+https://dcverse.netlify.app/
+
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

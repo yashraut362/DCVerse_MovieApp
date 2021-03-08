@@ -11,19 +11,19 @@ class App extends Component {
   state = {
     user: {},
   }
-  componentDidMount() {
-    this.authListener();
-  }
+  // componentDidMount() {
+  //   this.authListener();
+  // }
 
-  authListener() {
-    fire.auth().onAuthStateChanged((user) => {
-      if (user) {
-        this.setState({ user });
-      } else {
-        this.setState({ user: null });
-      }
-    })
-  }
+  // authListener() {
+  //   fire.auth().onAuthStateChanged((user) => {
+  //     if (user) {
+  //       this.setState({ user });
+  //     } else {
+  //       this.setState({ user: null });
+  //     }
+  //   })
+  // }
 
   render() {
     return (

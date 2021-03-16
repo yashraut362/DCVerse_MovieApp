@@ -3,7 +3,6 @@ import 'materialize-css/dist/css/materialize.min.css';
 import { BrowserRouter } from 'react-router-dom';
 import HomeRedirector from './pages/HomeRedirector';
 import SignIn from './components/auth/AuthPage';
-import fire from './config/fbConfig';
 
 
 
